@@ -1,0 +1,12 @@
+import org.gradle.kotlin.dsl.repositories
+
+rootProject.name = "build-logic"
+
+dependencyResolutionManagement {
+
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        maven { url = uri("https://repo.spring.io/snapshot") }
+    }
+}
